@@ -23,6 +23,7 @@ const ArticleCard = lazy(() => import("../../components/ArticleCard"));
 
 const useGet = (key:string, url: string) => {
   
+  // throw new Error("some error occured")
     return useQuery({
       queryKey: [key],
       queryFn: () => axios.get(`${url}`).then((res) => res.data),
