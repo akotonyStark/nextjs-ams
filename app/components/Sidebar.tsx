@@ -1,5 +1,5 @@
 'use client'
-import { ChatIcon, EditIcon } from "@chakra-ui/icons"
+import { BellIcon, ChatIcon, EditIcon } from "@chakra-ui/icons"
 import { List, ListIcon, ListItem } from "@chakra-ui/react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
@@ -11,7 +11,8 @@ const Sidebar = () => {
     
     const menus = [
         {name: "Articles", href:'/articles', icon: ChatIcon},
-        {name: "Create Article", href:"/create", icon: EditIcon}
+        {name: "Create Article", href:"/create", icon: EditIcon},
+        {name: "Analytics", href:"/analytics", icon: BellIcon}
     ]
     return (
         <List color={'white'} background={'#1a202c'} height={'100%'} fontSize={{base:'0.6em', md:'0.8em', lg:'1em'}} spacing={5} p={5} >

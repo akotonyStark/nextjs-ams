@@ -16,7 +16,9 @@ import axios from 'axios'
 import * as Yup from 'yup';
 import { useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
-import { Article } from "../articles/page";
+import { Article } from "../articles/articleList";
+
+
 
 
 export type Tag = {
